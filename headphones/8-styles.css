@@ -1,0 +1,184 @@
+/* ... All previous styles from your chosen version (4, 6, or 7) ... */
+/* CSS Reset and General Styling */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Define CSS Variables for consistency */
+:root {
+    --color-primary: #FF6565;
+    --color-white: #FFFFFF;
+    --color-black: #071629;
+    --font-family-base: 'Source Sans Pro', sans-serif;
+    --font-size-large: 1.8rem;
+    --font-size-medium: 1.6rem;
+    --font-size-small: 1.4rem;
+}
+
+body {
+    font-family: var(--font-family-base);
+    color: var(--color-black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Header and Hero Section */
+.hero-section {
+    background-image: url('images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-white);
+    padding-bottom: 5rem;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 15rem; /* Space between header and hero content */
+}
+
+.logo img {
+    width: 160px;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content .subtitle {
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+.hero-description {
+    font-size: var(--font-size-medium);
+    line-height: 1.6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .header-nav {
+        flex-direction: column;
+        padding-bottom: 8rem;
+    }
+
+    .logo {
+        margin-bottom: 2rem;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Hamburger Menu Icon Styling */
+.menu-icon {
+    display: none; 
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-white);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* --- Mobile Responsiveness for Header --- */
+@media (max-width: 480px) {
+    .header-nav {
+        /* Adjust alignment for mobile */
+        flex-direction: row; /* Keep it horizontal */
+        justify-content: space-between;
+        align-items: center;
+        position: relative; /* For positioning the menu */
+    }
+
+    .menu-icon {
+        display: block; /* Show hamburger icon */
+        order: 1; /* Place it on the left */
+    }
+
+    .logo {
+        order: 2; /* Place logo in the middle */
+        margin: 0 auto; /* Center it */
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links by default */
+        position: absolute;
+        top: 100%; /* Position below the header */
+        left: 0;
+        width: 100%;
+        background-color: var(--color-black); /* Give it a background */
+        padding: 1rem 0;
+    }
+
+    .nav-links.active {
+        display: block; /* Show menu when active */
+    }
+    
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}

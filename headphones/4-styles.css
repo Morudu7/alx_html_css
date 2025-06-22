@@ -1,0 +1,40 @@
+/* ... All styles from 3-styles.css ... */
+
+/* Footer Section */
+.footer-section {
+    background-color: rgb(59, 59, 164);
+    color: white;
+    padding: 5rem 0 2rem 0;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links [class^="holberton_school-icon-"] {
+    font-size: 2rem;
+    color: white;
+}
+
+.copy-right {
+    text-align: center;
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    /* ... previous mobile styles ... */
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

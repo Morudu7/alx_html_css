@@ -1,0 +1,61 @@
+
+.container {
+    text-align:center;
+    max-width: 650px;
+    margin: 5rem auto 4rem auto;
+    color:white;
+}
+
+
+.our-results-section {
+    background-image: url('images/headphones_hero_2.jpg'); /* This will be replaced later */
+    background-size: cover;
+    background-position: center;
+    color: var(--color-white);
+    padding: 5rem 0;
+}
+
+/* We can reuse .section-header, but we need to override the color */
+.our-results-section .section-header p {
+    color: var(--color-white);
+}
+.pentagon-text {
+  position: absolute;
+  top: 50px; /* Adjust as needed */
+  left: 70px; /* Adjust as needed */
+  color: darkblue; /* Or your desired color */
+}
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+.result-item {
+    background-image: url('images/pentagon.png'); /* Placeholder image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 6rem 2rem;
+    color: white; /* Adjust padding to fit content inside the pentagon shape */
+}
+
+.result-item h3 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.result-item p {
+    font-size: var(--font-size-small);
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    /* ... previous mobile styles ... */
+    .results-grid {
+        grid-template-columns: 1fr 1fr; /* Two items per row on mobile */
+        gap: 3rem;
+    }
+    } 
