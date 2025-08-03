@@ -1,0 +1,180 @@
+/* styles for home page */
+.header {
+    background-image: url(./Images/Object.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.landing-wraper {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.h1 {
+    color: white;
+    font-size: 75px;
+}
+
+.btn {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+.contenth1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.section-pros {
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+}
+
+.h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.learn {
+    color: purple;
+    font-weight: bold;
+}
+
+.pros-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    text-align: center;
+    gap: 2rem;
+}
+
+.color-text {
+    color: white;
+}
+
+
+/* styles for the quote section */
+.quote-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background-color: rgb(141, 95, 141);
+    text-align: center;
+    height: 350px;
+    align-content: center;
+}
+
+.iterm1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.iterm2 {
+    grid-column: 2 /span 3;
+}
+
+/*Styles for tutorial section */
+.tutorials-section {
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    width: 1228px;
+}
+
+.tutorials-iterms {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+/* Styles for membership section */
+.membership-section {
+    background-color: rgb(3, 3, 50);
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+.membership-iterms {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    color: white;
+    padding: 50px;
+}
+
+/* styles for F.A.Q section */
+.FAQ-section {
+    padding: 225px;
+    margin: auto;
+    width: 1228px;
+}
+
+.FAQ-heading {
+    text-align: center;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.FAQ-iterms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 250px;
+    row-gap: 250px;
+}
+
+/* styles for the footer section */
+.footer {
+    background-color: rgb(3, 3, 50);
+    text-align: center;
+    margin: auto;
+    height: 150px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.footer-socials {
+    display: flex;
+    gap:1rem;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.navitem {
+    color: white;
+    font-weight: bold;
+}
